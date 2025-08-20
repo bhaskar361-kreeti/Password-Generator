@@ -39,9 +39,9 @@ function App() {
         <h1 className='mb-10 text-3xl font-bold '>Password Generator</h1>
         <div className='flex justify-center items-center flex-col password_section w-3/5 h-[350px]  bg-blue-900 rounded-2xl'>
           <div className=' input__button w-4/5 h-4/5 flex justify-center gap-x-4 items-center'>
-            <input className='w-3/5 px-6 py-6 rounded-xl text-2xl bg-gray-300 text-black' type="text" value={password} placeholder='Password' />
+            <input className='w-3/5 px-6 py-6 rounded-xl text-2xl bg-gray-300 text-black' type="text" ref={passwordReference} value={password} placeholder='Password' />
             <button
-            onClick={()=>copyPasswordToClipboard}
+            onClick={()=>copyPasswordToClipboard()}
             className='bg-orange-300 font-bold px-6 py-6 rounded-xl text-black'>Click here</button>
           </div>
 
